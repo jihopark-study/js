@@ -1,6 +1,10 @@
 import { SNB } from "../list11.js";
 import { Select } from "./Select.js";
 import { Tab } from "./Tab.js";
+import { Tab2 } from "./Tab2.js";
+import { Dialog } from "./Dialog.js";
+Tab2("tab");
+Dialog("popup", true);
 
 SNB();
 // SNB({

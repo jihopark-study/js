@@ -7,6 +7,7 @@
   <title>표6</title>
   <link rel="stylesheet" href="./css/reset.css" />
   <link rel="stylesheet" href="./css/table6.css" />
+  <script type="module" src="./js/global.js"></script>
 </head>
 
 <body>
@@ -29,7 +30,7 @@
           <td>계약자와 피보험자가 동일한 경우에만 계약이 가능</td>
         </tr>
         <tr>
-          <th>가입 연령 <button class="btn-info" aria-label="자세한 정보보기"></button></th>
+          <th>가입 연령 <button class="btn-info" data-dialog-open="popup" aria-label="자세한 정보보기"></button></th>
           <td>만 19세 - 69세</td>
         </tr>
         <tr>
@@ -68,10 +69,13 @@
         </tr>
       </tbody>
     </table>
-    <dialog class="dialog">
+
+
+
+    <dialog class="dialog popup1" data-dialog="popup">
       <div class="dialog__header">
         <h2>연금전환특약</h2>
-        <button class="btn-close" aria-label="팝업닫기"></button>
+        <button data-dialog-close="popup" class="btn-close popup1-2" aria-label="팝업닫기"></button>
       </div>
       <div class="dialog__content">
         <p class="text-type1">연금전환특약의 정의와 신청방법, 구비서류 등을 안내해 드립니다.</p>

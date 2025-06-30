@@ -18,6 +18,7 @@
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="../css/style.css" />
+  <script type="module" src="../js/global.js"></script>
 </head>
 
 <body>
@@ -188,7 +189,7 @@
         </tbody>
       </table>
       <div class="align center mt30 btn-group-type2">
-        <button class="btn white base">등록</button>
+        <button class="btn white base" data-dialog-open="popup">등록</button>
         <button class="btn white base">취소</button>
       </div>
 
@@ -248,6 +249,26 @@
       </div>
     </div>
   </footer>
+
+  <dialog class="popup" data-dialog="popup">
+    test
+    <button data-dialog-close="popup" class="btn-close" aria-label="닫기" >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        viewBox="0 0 20 20"
+        fill="none"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M8.67925 9.99995L0.000211985 1.32081L1.32104 0L10.0001 8.67914L18.6792 0.000136721L20 1.32096L11.3209 9.99996L20 18.6792L18.6792 20L10.0001 11.3208L1.32081 19.9999L0 18.6791L8.67925 9.99995Z"
+          fill="#999999"
+        />
+      </svg>
+    </button>
+  </dialog>
 
 </body>
 
