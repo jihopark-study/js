@@ -1,4 +1,5 @@
 import { IncludeHTML } from "./IncludeHTML.js";
+import { Notice, GetParameter } from "./Notice.js";
 import { GNB } from "../main.js";
 
 import { Select } from "./Select.js";
@@ -20,3 +21,5 @@ Select((value) => {
 });
 
 Dialog("popup", true);
+Notice();
+GetParameter();
