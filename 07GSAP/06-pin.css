@@ -2,6 +2,17 @@
   padding: 0;
   margin: 0;
 }
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background: white;
+  &.fixed {
+    position: fixed;
+  }
+}
 section {
   position: relative;
   height: 100vh;

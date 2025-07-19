@@ -1,10 +1,11 @@
 import { IncludeHTML } from "./IncludeHTML.js";
-import { Notice, GetParameter } from "./Notice.js";
+// import { Notice, GetParameter } from "./Notice.js";
 import { GNB } from "../main.js";
 
 import { Select } from "./Select.js";
 import { Alarm } from "./Alarm.js";
 import { Dialog } from "./Dialog.js";
+import { Animation } from "./Animation.js";
 
 // header, footer import
 IncludeHTML("/02Website/include/header.html", ".header").then(() => {
@@ -21,5 +22,6 @@ Select((value) => {
 });
 
 Dialog("popup", true);
-Notice();
-GetParameter();
+// Notice();
+// GetParameter();
+Animation();

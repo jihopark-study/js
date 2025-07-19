@@ -1,4 +1,5 @@
 import { data } from "./data/main_data.js";
+import { HeaderAnimation } from "./js/HeaderAnimation.js";
 
 export const GNB = (option = {}) => {
   const config = {
@@ -51,6 +52,7 @@ export const GNB = (option = {}) => {
     // hadleGNB();
   };
   GNBBind();
+  HeaderAnimation();
 };
 
 //  ${
